@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nike_clone/core/theme/app_theme.dart';
-import 'package:nike_clone/features/auth/presentation/screens/signup_screen.dart';
+// import 'package:nike_clone/features/auth/presentation/screens/splash_screen.dart';
+import 'package:nike_clone/features/auth/presentation/screens/welcome_screen.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -8,9 +9,10 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Nike Clone',
       theme: AppTheme.darkTheme,
-      home: const SignUpScreen(),
+      home: const WelcomeScreen(),
     );
   }
 }
